@@ -1,0 +1,34 @@
+### hello
+GET http://localhost:8080/api/hello
+
+### authentication
+POST http://localhost:8080/api/authenticate
+Content-Type: application/json
+
+{
+  "username" : "admin",
+  "password" : "admin"
+}
+
+### authentication by user
+POST http://localhost:8080/api/authenticate
+Content-Type: application/json
+
+{
+  "username" : "seogineer",
+  "password" : "seogineer"
+}
+
+### signup
+POST http://localhost:8080/api/signup
+Content-Type: application/json
+
+{
+  "username" : "seogineer",
+  "password" : "seogineer",
+  "nickname" : "seogineer"
+}
+
+### getUser
+GET http://localhost:8080/api/user/seogineer
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZW9naW5lZXIiLCJhdXRoIjoiUk9MRV9VU0VSIiwiZXhwIjoxNjc1NjcyNTA0fQ.tpG_r60XiU-I91EnnUsZ3qeRyAweekV9jDIcJfbhFbj7di6OhL3FrtAyvXJl08UQI1kkZC6IKIoh6pkJiPsEEQ
